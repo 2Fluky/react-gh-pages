@@ -14,7 +14,6 @@ function App() {
       <div className="App">
         <Navbar/>
         <Routes>
-          <Route path="/react-gh-pages" component={App} exact />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contacts" element={<Contacts />} />
