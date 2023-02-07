@@ -1,0 +1,406 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.blockY{
+  background-color:whitesmoke;
+  width: 100%;
+  height: 120vh;
+}
+
+.blockW{
+  position: relative;
+  background-color:white;
+  width: 100%;
+  height: 120vh;
+}
+
+.row-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.item-card {
+  transition: .5s;
+  margin-top: 15vh;
+  height: 70vh;
+  width: 25%;
+  background-color: white;
+  text-align: center;
+  outline: 1px solid grey;
+}
+
+.item-card:hover{
+  transition: .5s;
+  box-shadow: -10px 10px 0px 0px rgba(0, 0, 0, 0.8);
+  transform: translate(1.5%, -1.5%)
+}
+
+.img {
+  height: 50%;
+  width: 100%;
+  background-color: grey;
+}
+
+#about-background {
+  height: 190vh;
+}
+
+#card-title {    
+  transform: translateY(50%);
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+#card-text {
+  padding: 1rem;
+  display: block;
+}
+
+#uil {
+  background-image: url('https://diversity.utexas.edu/wp-content/uploads/2016/04/uil-logo.jpg');
+  background-size: 100%;
+}
+
+#codejam {
+  background-image: url('https://images.unsplash.com/photo-1529429612779-c8e40ef2f36d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+  background-size: 100%;
+}
+
+#lessons {
+  background-image: url('./Components/CodingLesson.png');
+  background-color: rgb(239, 221, 197);
+  background-size: 100%;
+}
+
+.learn-more{
+  transition: .5s;
+  left: 50%;
+  margin: auto;
+  margin-top: 2rem;
+  background-color: rgb(233, 223, 190);
+  width: 8rem;
+  height: 2rem;
+  border-radius: 5px;
+  border-color: rgba(0, 0, 0, 0);
+  outline: 1px solid grey;
+}
+
+.learn-more:hover {
+  transition: .5s;
+  background-color: rgb(210, 198, 149); 
+  box-shadow: -3px 3px 0px 0px rgba(0, 0, 0, 0.8);
+  transform: translate(1.5%, -1.5%)
+}
+
+.learn-more:active {
+  background-color: rgb(163, 153, 128); 
+}
+
+.info-box {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 62%;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  text-align: center;
+}
+
+.item-card {
+  height: 70vh;
+  width: 25%;
+  background-color: whitesmoke;
+}
+
+.about-title {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(53, 169, 177);
+  width: 25rem;
+  height: 5rem;
+  text-align: center;
+}
+
+#home-img {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-80%, -50%);
+  width: 40%;
+
+}
+
+.basic-info {
+  position: absolute;
+  top: 17%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  width: 40rem;
+  height: 15rem;
+  border-radius: 20px;
+  -webkit-filter: drop-shadow(3px 3px 5px rgba(34, 34, 34, 0.3));
+  filter: drop-shadow(3px 3px 5px rgba(34, 34, 34, 0.3));
+  text-align: center;
+}
+
+#info-text {
+  margin: auto;
+  font-size: 1.2rem;
+  font-family: 'Jost', sans-serif;
+  width: 35rem;
+  transform: translateY(20%);
+}
+
+#title-text {
+  color: white;
+  font-size: 3rem;
+}
+
+#button-title {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+
+.footer {
+  position: absolute;
+  bottom: -12rem !important;
+  height: 12rem;
+  width: 100%;
+  background-color:rgb(178, 175, 164);
+}
+
+.footer-links {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 62%;
+  transform: translateY(-47%);
+}
+
+.footer-info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 30%;
+  transform: translateY(-47%);
+}
+
+#bowie-logo {
+  position: absolute;
+  left: 16%;
+  top: 2rem;
+  width: 8rem;
+}
+
+#footer-link-text {
+  color: black;
+  text-decoration: none;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+}
+
+
+#footer-text {
+  color: black;
+  text-decoration: none;
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+}
+
+#footer-link-text:hover {
+  color:brown;
+  cursor: pointer;
+}
+
+.vl {
+  border-left: 1.5px solid rgba(0, 0, 0);
+  height: 70%;
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navbar {
+  transition: .3s;
+  position: fixed;
+  width: 100%;
+  font-size: 1.2rem;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  z-index: 1;
+}
+
+.navbar-show {
+ transition: .3s;
+ background-color: white;
+ position: relative;
+ width: 100%;
+ font-size: 1.2rem;
+ height: 10vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ z-index: 1;
+ box-shadow: 0px 1.5px 0px rgba(0, 0, 0, .2);
+}
+
+.nav-item {
+  font-family: 'Jost', sans-serif;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 3rem; 
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  cursor: pointer;
+}
+
+#coding-logo {
+  position: fixed;
+  left: 0;
+  width: 15%;
+}
+
+.discord-back {
+  width: 20rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-80%, -50%);
+}
+
+#discord-label {
+  outline: solid .3px grey;
+  margin-top: 2rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#discord-text {
+  transform: translate(-10%, 30%);
+}
+
+.contact-info {
+  height: 90vh;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -45%);
+  width: 35rem;
+  border-radius: 20px;
+  outline: solid 0.5px grey;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+}
+
+.backdrop {
+  /* background-color:rgb(53, 169, 177);
+  outline: solid 1rem rgb(53, 169, 177); */
+  border-radius: 5px;
+  transition: .5s;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -45%);
+  text-align:center;
+}
+
+#calendar-text {
+  padding: .5rem;
+  font-size: 3rem;
+  font-weight: 600;
+  color: white;
+}
+
+#calendar {
+  outline: solid 0.5px gray;
+}
+
+#accordionExample {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70% !important;
+}
+
+#contact-text {
+  font-size: 1.2rem;
+}
+
+#calendar-link {
+  color:rgb(53, 169, 177);
+  font-size: 1.3rem;
+  padding-left: .4rem;
+  padding-right: .4rem;
+}
+
+.faq-row {
+  position: absolute;
+  margin-top: 5%;
+  left: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#faq-title {
+  width: 40%;
+}
+
+.faq-links {
+  border-left: solid gray 1px;
+  padding-left: 1rem;
+  position: absolute;
+  margin-top: 37%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+#faq-link:hover {
+border-left: solid black 3px;
+padding-left: 1rem;
+translate: transformX(-1rem);
+}
