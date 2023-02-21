@@ -5,10 +5,9 @@ import { useNavigate } from 'react-router-dom';
  
 function Home() {
 
-  window.scrollTo(0,0);
+  // window.scrollTo(0,0);
 
   const navigate = useNavigate();
-  
 
   const navigateAbout = () => {
     setTimeout(() => {
@@ -51,14 +50,41 @@ function Home() {
               the discord and ask there.
             </p>
           </div>
-          <img alt="faq" width="400rem" src="https://miro.medium.com/max/1400/0*fjAGp_YGPXNRI6Zo"></img>
+          <img id="faq-picture" alt="faq" width="400rem" src="https://cdn.searchenginejournal.com/wp-content/uploads/2020/08/how-to-identify-questions-optimize-your-site-for-qa-faq-more-5f4546ee46f53-1280x720.png"></img>
         </div>
-        <div className="faq-links">
-          <span id="faq-link">Club time & location</span>
-          <br></br>
-          <span id="faq-link">Club activities, events, etc.</span>
-          <br></br>
-          <span id="faq-link">Club contact information</span>
+        {/* <div className="faq-items">
+          <div className="faq-links">
+            <span id="faq-link">Club time & location</span>
+            <br></br>
+            <span id="faq-link">Club activities, events, etc.</span>
+            <br></br>
+            <span id="faq-link">Club contact information</span>
+          </div>
+        </div> */}
+        <div class="row" id="scrollspy">
+          <div class="col-4">
+            <div id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy text-center">
+              <a class="p-1 rounded" href="#simple-list-item-1">Location & Time</a>
+              <a class="p-1 rounded" href="#simple-list-item-2">Sign up</a>
+              <a class="p-1 rounded" href="#simple-list-item-3">Events & Activites</a>
+              <a class="p-1 rounded" href="#simple-list-item-4">Are Meetings</a>
+              <a class="p-1 rounded" href="#simple-list-item-5">Item 5</a>
+            </div>
+          </div>
+          <div class="col-8">
+            <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+              <h4 id="simple-list-item-1">Location & Time</h4>
+              <p>...</p>
+              <h4 id="simple-list-item-2">Sign up</h4>
+              <p>...</p>
+              <h4 id="simple-list-item-3">Events & Activites</h4>
+              <p>...</p>
+              <h4 id="simple-list-item-4">Item 4</h4>
+              <p>...</p>
+              <h4 id="simple-list-item-5">Item 5</h4>
+              <p>...</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
