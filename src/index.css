@@ -55,10 +55,6 @@ code {
   background-color: grey;
 }
 
-#about-background {
-  height: 190vh;
-}
-
 #card-title {    
   transform: translateY(50%);
   font-weight: 500;
@@ -303,6 +299,10 @@ code {
   transform: translate(-80%, -50%);
 }
 
+#contact-us-img {
+  padding-left: 25rem;
+}
+
 #discord-label {
   outline: solid .3px grey;
   margin-top: 2rem;
@@ -327,10 +327,22 @@ code {
   transform: translate(-50%, -45%);
   width: 35rem;
   border-radius: 20px;
-  outline: solid 0.5px grey;
+  /* outline: solid 0.5px grey; */
+  box-shadow: 0 0 8px rgba(0, 0, 0,.5);
   margin: 0 auto;
   background-color: rgb(255, 255, 255);
 }
+
+#contact-row {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 
 .backdrop {
   background-color:rgb(255, 255, 255);
@@ -373,7 +385,7 @@ code {
   padding-right: .4rem;
 }
 
-.faq-row {
+.faq-row1 {
   position: absolute;
   margin-top: 5%;
   left: 10%;
@@ -382,31 +394,49 @@ code {
   justify-content: space-between;
 }
 
-#faq-title {
-  width: 40%;
+.faq-row2 {
+  position: absolute;
+  margin-top: 30%;
+  left: 10%;
+  display: flex;
+  flex-direction: row;
 }
 
-.faq-links {
-  border-left: solid gray 1px;
+#faq-title {
+  width: 50%;
+}
+
+#faq-links {
+  border-left: solid black 1px;
   padding-left: 1rem;
+  width: fit-content;
   display: flex;
   flex-direction: column;
+  height: fit-content;
+  margin-right: 5rem;
 }
 
-#faq-link {
+.faq-link {
   padding-bottom: .5rem;
+  padding-top: .5rem;
+  font-size: 1.1rem;
+  color: black;
+  text-decoration: none;
+  text-align: left;
 }
 
 #faq-picture {
+  position: absolute;
+  left: 66%;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
-#faq-link:hover {
-font-weight: 500;
-border-left: solid black 3px;
-padding-left: 1rem;
-margin-left: -1.05rem;
-cursor: pointer;
+.faq-link:hover {
+  font-weight: 500;
+  border-left: solid black 3px;
+  margin-left: -1.05rem;
+  padding-left: 1rem;
+  cursor: pointer;
 }
 
 .faq-items {
@@ -416,28 +446,22 @@ cursor: pointer;
   display: flex;
   flex-direction: row;
   width: 80%;
-  justify-content: space-between;
 }
 
-.scrollspy-example {
-  /* background-color: white;
-  outline: 1rem solid white;
-  border-radius: 5px; */
-  height: 250px; 
-  width: 100%;
-  overflow: auto;
+#faq-block {
+  height: 230vh;
 }
 
-.rounded {
-  width: 70%;
-}
-.rounded:hover {
-  background-color: rgb(122, 189, 234);
+.question {
+  padding: 1rem;
+  background-color: white;
+  width: 40rem;
+  height: fit-content;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-#scrollspy {
-  position: relative;
-  top: 50%;
-  left: 10%;
-  width: 70%;
+.answer-title {
+  font-size: 1.5rem;
+  font-weight: 500;
 }

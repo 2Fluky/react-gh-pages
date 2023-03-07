@@ -7,7 +7,7 @@ function Footer() {
     <div className="footer">
        <a target="_blank" rel="noopener noreferrer" href="https://bowie.austinschools.org/"><img id="bowie-logo" alt="bowie logo" src="https://vipbranding.com/wp-content/uploads/2018/05/JamesBowieHS_PrimaryMark.png"></img></a>
        <div className="footer-info">
-          <span id="footer-text">Club hours: Tuesday ~ 4:40 a.m. to 5:20 p.m.</span>
+          <span id="footer-text">Club hours: Tuesday ~ 4:40 p.m. to 5:20 p.m.</span>
           <span id="footer-text">Location: Room F222</span>
        </div>
       <div className="footer-links">
