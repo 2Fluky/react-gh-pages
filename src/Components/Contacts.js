@@ -23,7 +23,7 @@ function Contacts() {
               <span id="discord-text">- Click the icon to join -</span>
             </div>
           </div>
-          <img id="contact-us-img" alt="contact-us" width="400rem" src="https://o.remove.bg/downloads/1476dc62-efca-40da-ba1d-8546632c8d2b/contact-center-abstract-concept_335657-3032-removebg-preview.png"></img>
+          <img id="contact-us-img" alt="contact-us" width="400rem" src={require('./ContactImg.png')}></img>
         </div>
       </div>
     </div>

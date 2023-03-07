@@ -301,6 +301,7 @@ code {
 
 #contact-us-img {
   padding-left: 25rem;
+  background-image: ur('ContactImg.png');
 }
 
 #discord-label {
